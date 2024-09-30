@@ -102,16 +102,11 @@ if uploaded_file is not None:
     def highlight_check(val):
         return 'color: green' if val == '✔️' else 'color: black'
         
-        # Yazıların beyaz olmasını sağlayan stil fonksiyonu
-    def make_text_white(val):
-        return 'color: white'
-
     # Renklendirmeleri uygulama
     styled_df = filtered_df.style.applymap(highlight_booking, subset=['B1', 'B2', 'B3']) \
                                  .applymap(highlight_expedia, subset=['E1', 'E2', 'E3']) \
                                  .applymap(highlight_agoda, subset=['A1', 'A2', 'A3']) \
-                                 .applymap(highlight_check) \
-                                 .applymap(make_text_white)
+                                 .applymap(highlight_check) 
 
 
     # Tablonun tamamını sayfaya sığdırmak için HTML/CSS kullanarak genişlik ayarları yapalım
