@@ -1,0 +1,20 @@
+# macOS işletim sistemi dosyaları
+.DS_Store
+
+# Python cache ve derleme dosyaları
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ortam dosyaları (örneğin, Virtualenv)
+env/
+venv/
+
+# Log dosyaları
+*.log
+
+# Çıktı dosyaları
+*.out
+*.class
